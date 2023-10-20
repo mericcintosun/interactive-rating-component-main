@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 5%;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="box-1">
+        <img src="images/icon-star.svg" alt="" class="star-icon" />
+        <h1 class="fs-head fw-bold">How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </section>
+
+      <section class="box-2">
+        <div class="number-box">
+          <p
+            class="number"
+            id="number-1"
+            onclick="numberClick(rateOne , rateTwo, rateThree, rateFour,rateFive);
+            castVote(1);
+            "
+          >
+            1
+          </p>
+          <p
+            class="number"
+            id="number-2"
+            onclick="numberClick(rateTwo , rateOne, rateThree, rateFour,rateFive);
+           castVote(2);
+"
+          >
+            2
+          </p>
+          <p
+            class="number"
+            id="number-3"
+            onclick="numberClick(rateThree , rateOne, rateTwo, rateFour,rateFive);
+          castVote(3);
+           "
+          >
+            3
+          </p>
+          <p
+            class="number"
+            id="number-4"
+            onclick="numberClick(rateFour , rateOne, rateTwo, rateThree,rateFive);
+           castVote(4);
+            "
+          >
+            4
+          </p>
+          <p
+            class="number"
+            id="number-5"
+            onclick="numberClick(rateFive , rateOne, rateTwo, rateThree,rateFour);
+           castVote(5);
+            "
+          >
+            5
+          </p>
+          <p class="result-paragraph"></p>
+        </div>
+        <a href="thanks.html"
+          ><button
+            class="submit-button"
+            onclick="denemeFonksiyon(rateOne);
+          submitFunction();"
+          >
+            SUBMIT
+          </button></a
+        >
+        <p class="deneme-js"></p>
+      </section>
+    </main>
+
+    <div class="attribution">
+      
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Meric Cintosun</a></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
